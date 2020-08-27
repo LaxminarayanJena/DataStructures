@@ -1,2 +1,2 @@
 # DataStructures
-Quick sort -O(n log n)
+Quick sort,MergeSort -O(n log n)
