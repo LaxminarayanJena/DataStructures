@@ -12,9 +12,12 @@ public class MergeSortedArrays {
 		int lenar2=ar2.length;
 		 int[] len= new int[lenar1 + lenar2];
 	int i=0,j=0,k=0;
-	
+	 // Traverse both array 
 	while(i<lenar1 && j<lenar2)
 	{
+	   /* Check if current element of first array is smaller than current element of second array. If yes, store first 
+             array element and increment first array index. Otherwise do same with second array 
+		*/
 		if(ar1[i]<ar2[j])
 		{
 			len[k]=ar1[i];
@@ -28,13 +31,14 @@ public class MergeSortedArrays {
 		}
 		k++;
 	}
+		// Store remaining elements of first array 
 	while(i<ar1.length)
 	{
 		len[k]=ar1[i];
 		i++;
 		k++;
 	}
-	
+	// Store remaining elements of second array 
 	while(j<ar2.length)
 	{
 		len[k]=ar2[j];
